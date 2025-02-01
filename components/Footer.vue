@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup lang="en">
 const route = useRoute()
 
 /**
@@ -7,8 +7,8 @@ const route = useRoute()
  */
 const getLocalizedNotice = computed((): string => {
   if (route.name?.includes("blog"))
-    return "Bu site GitHub üzerinde açık kaynak olarak paylaşılmıştır."
-  else return "This website is open-source on GitHub"
+    return "Copyright © 2025, Paul Sybrandy"
+  else return "Copyright © 2025, Paul Sybrandy
 })
 </script>
 
