@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import { computed } from 'vue'
+import { useRoute } from 'vue-router'
+
 const route = useRoute()
 
 /**
@@ -8,7 +11,8 @@ const route = useRoute()
 const getLocalizedNotice = computed((): string => {
   if (route.name?.includes("blog"))
     return "Copyright © 2025, Paul Sybrandy"
-  else return "Copyright © 2025, Paul Sybrandy
+  else 
+    return "Copyright © 2025, Paul Sybrandy"
 })
 </script>
 
@@ -23,7 +27,7 @@ const getLocalizedNotice = computed((): string => {
           class="text-center border-b border-transparent hover:border-black/10 dark:hover:border-white/10 transition-colors"
           blank
         >
-          {{ getLocalizedNotice }}
+          {{ getLocalizedNotice.value }}
         </SmartLink>
       </div>
     </div>
