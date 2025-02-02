@@ -5,7 +5,7 @@ const route = useRoute()
  * Returns localized GitHub notice string in Turkish/English according to current route.
  * @returns {string}
  */
-const getLocalizedNotice = computed((): string => {
+const getLocalizedNotice = computed(): string => {
   if (route.name?.includes("blog"))
     return "Copyright © 2025, Paul Sybrandy"
   else return "Copyright © 2025, Paul Sybrandy
